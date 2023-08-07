@@ -1,0 +1,17 @@
+.button {
+    padding: 30px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20%;
+    background-color: #b9d3fe;
+}
+
+.button:hover {
+    background-color: #5997fc;
+    color: white;
+}
+
+.button:focus {
+    background-color: #4472be;
+    color: white;
+}
