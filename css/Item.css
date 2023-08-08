@@ -1,0 +1,30 @@
+.item {
+    border: solid 1px rgb(255, 255, 255);
+    padding: 25px;
+    color: white;
+    width: 400px;
+    text-align: center;
+    border-radius: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #090c10;
+}
+
+.item__image {
+    max-width: 300px;
+    border-radius: 20%;
+}
+
+.item__name {
+    font-size: xx-large;
+    margin: 16px 0 0 0;
+}
+
+.item__description {
+    font-size: x-large;
+    margin: 16px 0 0 0;
+}
+
+.item__price {
+    font-size: xx-large;
+    margin: 16px 0 0 0;
+}
