@@ -22,4 +22,18 @@ let itemArray = [
         price: 2.2,
         category: categories.salads
     },
+    {
+        imgSource: "images/Chicken-burger.jpg",
+        name: "Chicken Burger",
+        description: "Chicken burgers made with 100% all-natural chicken breast that is never frozen",
+        price: 4,
+        category: categories.main_course
+    },
+    {
+        imgSource: "images/Deep-fried-turkey.jpg",
+        name: "Deep-Fried Turkey",
+        description: "Cooked to perfection in hot oil, resulting in a crispy skin and juicy, flavorful meat",
+        price: 5.5,
+        category: categories.main_course
+    },
 ]

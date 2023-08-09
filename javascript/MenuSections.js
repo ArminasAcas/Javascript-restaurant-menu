@@ -15,7 +15,7 @@ function menuSections() {
     let items = document.querySelectorAll(".item");
     if (!items) return;
 
-    displayCategoryItems(categories.side_dish, items);
+    displayCategoryItems(categories.main_course, items);
 
     buttons.forEach(button => {
         button.addEventListener("click", () => {
