@@ -1,5 +1,5 @@
 let categories = {
-    main_course: "Main course",
+    main_course: "Main Course",
     side_dish: "Side Dish",
     salads: "Salads",
     soups: "Soups",

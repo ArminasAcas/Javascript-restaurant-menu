@@ -1,20 +1,16 @@
 function menuSections() {
+    let menuSection = document.querySelector(".menu-sections");
+    if (!menuSection) return;
+    createButtons(menuSection);
 
     let itemsDiv = document.querySelector(".items");
     if (!itemsDiv) return;
-
-    let menuSection = document.querySelector(".menu-sections");
-    if (!menuSection) return;
-
-    createButtons(menuSection);
     createItems(itemsDiv);
     
     let buttons = document.querySelectorAll(".button");
     if (!buttons) return;
-
     let items = document.querySelectorAll(".item");
     if (!items) return;
-
     let categoryDisplay = document.querySelector(".category");
     if (!categoryDisplay) return;
 
@@ -28,18 +24,20 @@ function menuSections() {
 }
 
 function createButtons(menuSection) {
+    if (!menuSection) return;
     let categoryArray = Object.values(categories);
+
     categoryArray.forEach(section => {
         let button = document.createElement("button");
         button.innerHTML = section;
         button.classList.add("button");
         button.setAttribute("data-category", section);
-
         menuSection.appendChild(button);
-    
     })
 }
 function createItems(itemsDiv) {
+    if (!itemArray) return;
+
     itemArray.forEach((item,index) => {
         let itemDiv = document.createElement("div");
         itemDiv.classList.add("item");
@@ -75,6 +73,9 @@ function createItems(itemsDiv) {
 }
 
 function displayCategoryItems(section, items, categoryDisplay){
+
+    if (!items || !section || !categoryDisplay) return;
+
     items.forEach(item => {
         console.log(section);
         console.log(item.getAttribute("data-category"));
