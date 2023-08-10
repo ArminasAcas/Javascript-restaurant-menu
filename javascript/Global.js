@@ -1,6 +1,6 @@
 let categories = {
     main_course: "Main course",
-    side_dish: "Side dish",
+    side_dish: "Side Dish",
     salads: "Salads",
     soups: "Soups",
     desserts: "Desserts",

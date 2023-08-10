@@ -25,15 +25,16 @@
 
 .item__name {
     margin: 0;
-    font-size: xx-large;
+    font-size: x-large;
+    color: #7ed0ff;
 }
 
 .item__price {
     margin: 0;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .item__description {
-    font-size: x-large;
+    font-size: large;
     margin: 16px 0 0 0;
 }

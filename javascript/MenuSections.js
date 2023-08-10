@@ -15,11 +15,14 @@ function menuSections() {
     let items = document.querySelectorAll(".item");
     if (!items) return;
 
-    displayCategoryItems(categories.main_course, items);
+    let categoryDisplay = document.querySelector(".category");
+    if (!categoryDisplay) return;
+
+    displayCategoryItems(categories.main_course, items, categoryDisplay);
 
     buttons.forEach(button => {
         button.addEventListener("click", () => {
-            displayCategoryItems(button.getAttribute("data-category"), items);
+            displayCategoryItems(button.getAttribute("data-category"), items, categoryDisplay);
         })
     })
 }
@@ -53,7 +56,7 @@ function createItems(itemsDiv) {
         name.classList.add("item__name");
 
         let price = document.createElement("h2");
-        price.innerHTML = item.price + " €";
+        price.innerHTML = item.price.toFixed(2) + " €";
         price.classList.add("item__price");
 
         namePriceDiv.appendChild(name);
@@ -71,7 +74,7 @@ function createItems(itemsDiv) {
     })
 }
 
-function displayCategoryItems(section, items){
+function displayCategoryItems(section, items, categoryDisplay){
     items.forEach(item => {
         console.log(section);
         console.log(item.getAttribute("data-category"));
@@ -79,4 +82,6 @@ function displayCategoryItems(section, items){
         if (item.getAttribute("data-category") !== section) item.style.display = "none";
         else if (item.getAttribute("data-category") === section) item.style.display = "block";
     })
+
+    categoryDisplay.innerHTML = section;
 }
